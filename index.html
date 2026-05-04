@@ -1791,7 +1791,7 @@ abandon. Get them back without burning margin.` },
 };
   </script>
 
-  <script type="text/babel" data-presets="react" data-type="module">
+  <script type="text/babel" data-presets="react">(function(){
 /* global React, ReactDOM, KIT, PROMPT_BODIES */
 var { useState, useEffect, useMemo, useRef } = React;
 
@@ -1961,9 +1961,9 @@ function Footer() {
 }
 
 window.UI = { useRoute, go, NudgeMark, TagChip, CategoryChip, Button, CopyBtn, CopyIcon, CheckIcon, ArrowIcon, Nav, CouponBanner, Footer, TWEAK_DEFAULTS };
-  </script>
+  })();</script>
 
-  <script type="text/babel" data-presets="react" data-type="module">
+  <script type="text/babel" data-presets="react">(function(){
 /* global React, KIT, PROMPT_BODIES, UI */
 var { useState, useEffect, useMemo } = React;
 var { TagChip, CategoryChip, Button, CopyBtn, ArrowIcon, NudgeMark, go } = UI;
@@ -2516,9 +2516,9 @@ function Landing({ tweaks }) {
 
 window.Landing = Landing;
 window.PromptRender = PromptRender;
-  </script>
+  })();</script>
 
-  <script type="text/babel" data-presets="react" data-type="module">
+  <script type="text/babel" data-presets="react">(function(){
 /* global React, KIT, PROMPT_BODIES, UI, PromptRender */
 var { useState, useMemo } = React;
 var { TagChip, CategoryChip, Button, CopyBtn, ArrowIcon, go } = UI;
@@ -2795,9 +2795,9 @@ function PromptPage({ slug }) {
 
 window.Library = Library;
 window.PromptPage = PromptPage;
-  </script>
+  })();</script>
 
-  <script type="text/babel" data-presets="react" data-type="module">
+  <script type="text/babel" data-presets="react">(function(){
 /* ============================================
    App — composed (TweaksPanel omitted; defaults from TWEAK_DEFAULTS apply)
    ============================================ */
@@ -2824,6 +2824,6 @@ function App() {
 }
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
-  </script>
+  })();</script>
 </body>
 </html>
