@@ -1793,7 +1793,7 @@ abandon. Get them back without burning margin.` },
 
   <script type="text/babel" data-presets="react">
 /* global React, ReactDOM, KIT, PROMPT_BODIES */
-const { useState, useEffect, useMemo, useRef } = React;
+var { useState, useEffect, useMemo, useRef } = React;
 
 /* ============================================
    Tweaks default — coupon mode
@@ -1965,7 +1965,7 @@ window.UI = { useRoute, go, NudgeMark, TagChip, CategoryChip, Button, CopyBtn, C
 
   <script type="text/babel" data-presets="react">
 /* global React, KIT, PROMPT_BODIES, UI */
-const { useState, useEffect, useMemo } = React;
+var { useState, useEffect, useMemo } = React;
 const { TagChip, CategoryChip, Button, CopyBtn, ArrowIcon, NudgeMark, go } = UI;
 
 /* ============================================
@@ -2520,7 +2520,7 @@ window.PromptRender = PromptRender;
 
   <script type="text/babel" data-presets="react">
 /* global React, KIT, PROMPT_BODIES, UI, PromptRender */
-const { useState, useMemo } = React;
+var { useState, useMemo } = React;
 const { TagChip, CategoryChip, Button, CopyBtn, ArrowIcon, go } = UI;
 
 /* ============================================
@@ -2801,7 +2801,7 @@ window.PromptPage = PromptPage;
 /* ============================================
    App — composed (TweaksPanel omitted; defaults from TWEAK_DEFAULTS apply)
    ============================================ */
-const { useEffect } = React;
+var { useEffect } = React;
 const { useRoute, Nav, CouponBanner, Footer, TWEAK_DEFAULTS } = UI;
 
 function App() {
